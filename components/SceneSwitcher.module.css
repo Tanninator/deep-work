@@ -1,0 +1,53 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.sep {
+  color: color-mix(in srgb, var(--ink) 45%, transparent);
+  font-size: 0.75rem;
+  padding: 0 0.2rem;
+  user-select: none;
+}
+
+.button {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: color-mix(in srgb, var(--ink) 62%, transparent);
+  font-family: var(--font-ui), Georgia, serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.35rem 0.2rem;
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+.button:hover {
+  color: var(--ink);
+}
+
+.button:focus-visible {
+  outline: 1px solid color-mix(in srgb, var(--ink) 55%, transparent);
+  outline-offset: 3px;
+}
+
+.active {
+  color: var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}

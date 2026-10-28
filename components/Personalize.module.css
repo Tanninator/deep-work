@@ -1,0 +1,65 @@
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1.25rem 1.75rem;
+  flex-shrink: 0;
+  padding-top: 0.75rem;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  cursor: pointer;
+}
+
+.label {
+  font-family: var(--font-ui), Georgia, serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--ink) 62%, transparent);
+}
+
+.slider {
+  appearance: none;
+  width: 7.5rem;
+  height: 1.15rem;
+  margin: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.slider:focus-visible {
+  outline: 1px solid color-mix(in srgb, var(--ink) 55%, transparent);
+  outline-offset: 3px;
+}
+
+.slider::-webkit-slider-runnable-track {
+  height: 1px;
+  background: color-mix(in srgb, var(--ink) 38%, transparent);
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 9px;
+  height: 9px;
+  margin-top: -4px;
+  border: none;
+  border-radius: 50%;
+  background: var(--ink);
+}
+
+.slider::-moz-range-track {
+  height: 1px;
+  background: color-mix(in srgb, var(--ink) 38%, transparent);
+}
+
+.slider::-moz-range-thumb {
+  width: 9px;
+  height: 9px;
+  border: none;
+  border-radius: 50%;
+  background: var(--ink);
+}
