@@ -2,6 +2,7 @@
 
 import { useState, useSyncExternalStore } from "react";
 import Editor from "@/components/Editor";
+import FullscreenToggle from "@/components/FullscreenToggle";
 import Library from "@/components/Library";
 import Personalize from "@/components/Personalize";
 import SceneSwitcher from "@/components/SceneSwitcher";
@@ -101,6 +102,7 @@ export default function DeepWorkPage() {
                   Export
                 </button>
               ) : null}
+              <FullscreenToggle className={styles.textButton} />
               <SceneSwitcher
                 scenes={scenes}
                 activeId={sceneId}
